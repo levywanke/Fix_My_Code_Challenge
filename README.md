@@ -1,199 +1,70 @@
 
-Debugging
- By: Guillaume
- Weight: 1
- Project will start Feb 12, 2024 6:00 AM, must end by Feb 26, 2024 6:00 AM
- Checker was released at Feb 15, 2024 6:00 PM
- An auto review will be launched at the deadline
-Background Context
-Fix my code is a new type of project, where we’ll jump into an existing code base and fix it!
+# Fix My Code Challenge
 
-Sometimes you will know the language, sometimes not.
+## Introduction
 
-Please download the repository 0x00-Fix_My_Code_Challenge and use it as initial files for all solutions.
+Welcome to the "Fix My Code Challenge" project! In this repository, you will find several tasks where you need to fix existing code that has bugs or incorrect behavior. Each task corresponds to a different programming language and focuses on debugging and correcting the provided code files.
 
-You should not recode everything, just fix it!
+### Background
 
-This project is NOT mandatory at all. It is 100% optional. Doing any part of this project will add a project grade of over 100% to your average. Your score won’t get hurt if you don’t do it, but if your current average is greater than your score on this project, your average might go down. Have fun!
+Fix My Code is a project designed to help you practice debugging skills. You'll work with existing codebases in various languages, identify issues, and apply fixes without rewriting the entire code. This project is optional but offers additional grades if completed successfully.
 
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS
-All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
-Tasks
-0. FizzBuzz
-#advanced
-Please take a look at my implementation of FizzBuzz in Python: source code
+## Tasks Overview
 
-Something is going wrong….
+### 0. FizzBuzz (Python)
 
-$ ./0-fizzbuzz.py 50
-1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 Fizz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 Fizz 46 47 Fizz 49 Buzz
-$
-15 should print FizzBuzz not Fizz
+The task involves fixing a Python script that implements the FizzBuzz game. The output should correctly print numbers, replace multiples of 3 with "Fizz", multiples of 5 with "Buzz", and multiples of both with "FizzBuzz".
 
-Repo:
+### 1. Print Square (JavaScript)
 
-GitHub repository: Fix_My_Code_Challenge
-Directory: 0x00-challenge
-File: 0-fizzbuzz.py
-   
-1. Print square
-#advanced
-Please take a look at my implementation of printing a square in Javascript: source code
+Here, you need to correct a JavaScript script that's supposed to print a square of asterisks (`#`). The script takes an integer argument indicating the size of the square to print.
 
-Something is going wrong….
+### 2. Sort (Ruby)
 
-$ ./1-print_square.js 4
-####
-####
-####
-####
-$ ./1-print_square.js 10
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-################
-$
-./1-print_square.js 10 should print a square of size 10…
+This task requires fixing a Ruby script that sorts its command-line arguments. The script currently fails to handle non-numeric inputs and needs adjustments to correctly sort numbers.
 
-Repo:
+### 3. User Password (Python)
 
-GitHub repository: Fix_My_Code_Challenge
-Directory: 0x00-challenge
-File: 1-print_square.js
-   
-2. Sort
-#advanced
-Please find here my implementation of sorting arguments in Ruby: source code
+You'll debug a Python class implementation (`User`) that includes a method `is_valid_password`. The method should return `True` for correct passwords but is currently failing to do so.
 
-Something is going wrong….
+### 4. Double Linked List (C)
 
-$ ruby 2-sort.rb 12 41 2 C 9 -9 31 fun -1 32
-31
-32
-12
-41
-2
-9
--9
--1
-$
-Repo:
+In this task, you'll work with a C implementation of a doubly linked list. There are issues with the list operations (`add`, `delete`, `print`) that need to be identified and fixed.
 
-GitHub repository: Fix_My_Code_Challenge
-Directory: 0x00-challenge
-File: 2-sort.rb
-   
-3. User password
-#advanced
-Please find here my implementation of a User class in Python: source code
+## Requirements
 
-Something is going wrong….
+### General
 
-$ ./3-user.py 
-Test User
-is_valid_password should return True if it's the right password
-$
-My tests should not print any error…
+- **Allowed Editors:** vi, vim, emacs
+- **Compilation:** All files will be compiled on Ubuntu 20.04 LTS.
+- **File Endings:** Ensure all modified files end with a newline character.
+- **README.md:** Each task directory should include a README.md file describing the problem and solution.
 
-Repo:
+## Repository Structure
 
-GitHub repository: Fix_My_Code_Challenge
-Directory: 0x00-challenge
-File: 3-user.py
-   
-4. Double linked list
-#advanced
-Please find here my implementation of a Double linked list in C: source code
+The repository structure follows a consistent format:
 
-Something is going wrong….
+- **GitHub Repository:** [Fix_My_Code_Challenge](https://github.com/username/Fix_My_Code_Challenge)
+- **Directory:** Each task is located in the `0x00-challenge` directory.
+- **Files:** Each task has a specific file that needs fixing (e.g., `0-fizzbuzz.py`, `1-print_square.js`).
 
-$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.c free_dlistint.c print_dlistint.c add_dnodeint_end.c delete_dnodeint_at_index.c -o delete_dnodeint
-$ ./delete_dnodeint 
-0
-1
-2
-3
-4
-98
-402
-1024
------------------
-0
-1
-2
-3
-4
-0
-402
-1024
------------------
-1
-2
-3
-4
-0
-402
-1024
------------------
-2
-3
-4
-0
-402
-1024
------------------
-3
-4
-0
-402
-1024
------------------
-4
-0
-402
-1024
------------------
-0
-402
-1024
------------------
-402
-1024
------------------
------------------
------------------
------------------
------------------
------------------
------------------
------------------
------------------
------------------
-$
-It doesn’t look right…
+## Getting Started
 
-Repo:
+To get started with fixing the code:
 
-GitHub repository: Fix_My_Code_Challenge
-Directory: 0x00-challenge
-File: 4-delete_dnodeint/
-  
-Copyright © 2024 ALX, All rights reserved.
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/username/Fix_My_Code_Challenge.git
+   ```
 
+2. Navigate to the task directory (e.g., `0x00-challenge`):
+   ```bash
+   cd Fix_My_Code_Challenge/0x00-challenge
+   ```
+
+3. Use your preferred editor (vi, vim, emacs) to open and modify the respective files.
+
+4. Debug the code according to the task requirements and ensure it meets the project specifications.
+
+5. Compile and test the code on Ubuntu 20.04 LTS to verify correctness.
 
